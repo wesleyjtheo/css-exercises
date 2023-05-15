@@ -48,7 +48,7 @@ button {
   pointer-events: none;
   position: fixed;
   inset: 0;
-  background: #000;
+  background: red;
   opacity: 0%;
 }
 
@@ -60,4 +60,15 @@ button {
 .backdrop.show {
   opacity: 30%;
 }
+
+
+.popup-modal {
+  transition: transform .3s ease-in-out, opacity .4s ease;
+  transform: translate(-50%, -100%);
+}
+
+.popup-modal.show {
+  transform: translate(-50%, -50%);
+}
+
 
